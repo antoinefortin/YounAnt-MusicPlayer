@@ -1,0 +1,26 @@
+@keyframes animation-arrow-left {
+    0% {
+
+    }
+        50% {
+            margin-right: 15px;
+        }
+            100% {
+
+                margin-right: 25px;
+            }
+}
+
+
+@keyframes animation-arrow-right {
+    0% {
+
+    }
+        50% {
+            margin-left: 15px;
+        }
+            100% {
+
+                margin-left: 25px;
+            }
+}

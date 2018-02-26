@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+
+{% block tunes %}
+
+    <style>
+
+
+    </style>
+
+    <div class='tunes-container'>
+        {% for tune in tunes %}
+            <a href='tunes/{{tune.id}}'>
+                <div class="single-tune elem">
+                    <img src="{{ tune.Cover }}">
+                    <ul>
+                        <li>{{ tune.Artist }} </li>
+                        <li>{{ tune.Title }} </li>
+                        <li>{{ tune.Album }} </li>
+                    </ul>
+                    <div class="hover-back"></div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

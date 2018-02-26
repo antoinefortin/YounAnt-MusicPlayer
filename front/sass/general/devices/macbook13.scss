@@ -1,0 +1,21 @@
+/* 1280 x 700 */
+
+@import "../font.scss";
+
+body {
+    .bloc {
+        .content-container {
+            width:75%;
+            h3 {
+                margin: 0 auto;
+            }
+
+            ul {
+                li {
+                    @include font-regular-bloc;
+
+                }
+            }
+        }
+    }
+}

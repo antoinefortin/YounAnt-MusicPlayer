@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('styles/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('styles/main2.css') }}">
+        <link rel="stylesheet" href="{{ asset('styles/main.css') }}">
+
+    </head>
+    <body>
+
+
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <a href="/home"><li>Home</li></a>
+                        <a href="/blog"><li>Blog</li></a>
+                        <a href="/tunes"><li>Tuness</li></a>
+                    </ul>
+                </nav>
+            </header>
+            {% block header %}{% endblock %}
+            {% block homePage %}{% endblock %}
+            {% block body %}{% endblock %}
+
+            {% block singleTune %}{% endblock %}
+            {% block blogCreate %}{% endblock %}
+            {% block tunes %}{% endblock %}
+            {% block blogPosts %}{% endblock %}
+            {% block singleBlogPosts %}{% endblock %}
+            {% block authorInfos %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+        </div>
+        <script src="{{ asset('js/player.js') }}"></script>
+    </body>
+</html>

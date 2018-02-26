@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+ {% block singleBlogPosts %}
+
+     <div class="single-blog">
+        <h3>{{ singlePost.title }}</h3>
+        <br>
+        <div class="single-post-header">{{ singlePost.header }}</div>
+        <div class="single-post-body">
+            {{ singlePost.body | raw }}
+        </div>
+     </div>
+ {% endblock %}
+
+
+{% block authorInfos %}
+
+    <div class="author-infos">
+
+        <p> More from this author... </p>
+
+            <a href="/blog/author/{{author.id}}">
+                <div class="author-infos-container shit">
+                    <div class="author-image elem">
+
+                        <img src="{{ author.image }}">
+                        <div class="hover-back"></div>
+                    </div>
+                    <div class="author-infos">
+                        <p>{{ author.fullName }}</p>
+                        <p class="city">{{ author.location }}</p>
+                    </div>
+
+                </div>
+            </a>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+
+{% extends 'base.html.twig' %}
+
+
+
+
+
+ {% block blogPosts %}
+
+    <div id="blog-items-container" >
+
+        {% for post in posts %}
+            <a class="" href="/blog/{{post.id}}">
+                <div class="single-post">
+                    <img src="{{post.thumbnail}}">
+                    <div class="content-post">
+                        <div class="post-infos">
+                            <div class="centered-infos">
+                                <h3>{{post.title}}</h3>
+                                <p>{{post.header}}</p>
+                            </div>
+                        </div>
+                    </div>s
+                </div>
+            </a>
+        {% endfor %}
+
+
+
+ {% endblock %}

@@ -1,0 +1,41 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+home:
+    path:     /home
+    defaults: { _controller: AppBundle:Default:home }
+
+
+blog_list:
+    path:     /blog
+    defaults: { _controller: AppBundle:BlogPost:list }
+
+blog_show:
+    path:     /blog/{postId}
+    defaults: { _controller: AppBundle:BlogPost:single }
+
+
+blog_create:
+    path:     /blog/new/
+    defaults: { _controller: AppBundle:BlogPost:create }
+
+
+blog_author:
+    path:     /blog/author/{authorId}
+    defaults: { _controller: AppBundle:BlogPost:listAuthorPosts }
+
+
+
+tunes:
+    path:     /tunes
+    defaults: { _controller: AppBundle:Tune:listTunes }
+
+
+tunes_single:
+    path:     /tunes/{tuneId}
+    defaults: { _controller: AppBundle:Tune:showSingleTune }
+
+tunes_styles:
+    path:     /tunes/styles/{styleId}
+    defaults: { _controller: AppBundle:Tune:showByStyles }

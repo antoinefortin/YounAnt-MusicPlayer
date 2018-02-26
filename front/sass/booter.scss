@@ -1,0 +1,15 @@
+// Libs
+@import "core/libs/animate.scss";
+
+
+// Including core scss
+@import 'core/layout-rules.scss';
+@import 'core/animate.scss';
+@import 'core/typo-responsive.scss';
+@import 'core/general.scss';
+
+// Site parts
+@import "site-parts/tunes.scss";
+
+// All component related
+@import "site-parts/animation-component/landing-page.scss";

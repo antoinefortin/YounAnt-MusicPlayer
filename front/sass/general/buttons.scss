@@ -1,0 +1,18 @@
+.main-button {
+    display: inline-block;
+    background-color: $mainBlack;
+    color:$mainYellow; 
+    cursor:pointer;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    padding-right:10px;
+    
+    transition: all 0.25s;
+    &:hover {
+        
+        border:solid black 3px;
+        background-color: yellow;
+        color:black;
+    }
+}

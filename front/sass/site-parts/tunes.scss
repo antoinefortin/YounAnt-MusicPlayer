@@ -1,0 +1,45 @@
+body {
+
+    .tunes-container {
+
+        margin:0 auto;
+        max-width:100%;
+        width:1250px;
+        padding-right:15px;
+        padding-left:15px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .single-tune {
+
+        width:250px;
+        height:250px;
+        margin: 16px;
+        img  {
+            width:100%;
+            height:100%;
+        }
+        .hover-back {
+
+            background-color: rgba(0,0,0,0.75);
+            top:0px;
+        }
+
+    }
+
+    .single-tune {
+        position: relative;
+        ul {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+
+            li {
+                color:white;
+            }
+        }
+    }
+}

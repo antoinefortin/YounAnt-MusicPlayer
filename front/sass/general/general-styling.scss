@@ -1,0 +1,35 @@
+@import "colors.scss";
+@import "font.scss";
+
+body {
+    
+}
+
+#site-container  {
+    margin-left:30px;
+    margin-right:30px;
+    position: relative;
+    .know-more {
+        cursor:pointer;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .plus-to-know-more {
+            margin-left:120px;
+        }
+    }
+
+
+    text-align: left;
+}
+
+
+header  {
+
+    .logo-container {
+        img {
+
+            height:auto;
+            width:150px;
+        }
+    }
+}

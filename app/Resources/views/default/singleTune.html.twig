@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block singleTune %}
+    <div class="single-tune row">
+        <div class='tune-infos-container '>
+
+            <img src='{{singleTune.Cover}}' alt='image'>
+            <h3>Artist Infos </h3>
+            <p> {{ singleTune.Artist }}</p>
+            <p> {{ singleTune.Album }}</p>
+            <p> {{ singleTune.Title }}</p>
+            <p> {{ singleTune.Genres }}</p>
+            <p> {{ singleTune.Year }}</p>
+            <p> {{ singleTune.Note }}</p>
+            <p> {{ singleTune.Duration }}</p>
+        </div>
+
+
+        <iframe style='display:none;' width="560" height="315" src="https://www.youtube.com/embed/{{ singleTune.Iframe}}?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+{% endblock %}
